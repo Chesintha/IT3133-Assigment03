@@ -4,24 +4,24 @@ export default function Profile(props){
         <table>
             <tr>
                 <td rowSpan={7}>
-                    <img className='profile' src={require('../assests/img/'+props.stu.profilePic)} alt="profile picture"/>
+                    <img className='profile' src={require('../assests/img/'+props.student.profilePic)} alt="Profile"/>
                 </td>
-                <td>ID{props.stu.studentId}</td>
+                <td>ID{props.student.studentId}</td>
             </tr>
             <tr>
-                <td>Full name:{props.stu.firstName+" "+props.stu.lastName}</td>
+                <td>Full name:{props.student.firstName+" "+props.student.lastName}</td>
             </tr>
             <tr>
-                <td>Age:{props.stu.age}</td>
+                <td>Age:{props.student.age}</td>
             </tr>
             <tr>
-                <td>Course:{props.stu.course}</td>
+                <td>Course:{props.student.course}</td>
             </tr>
             <tr>
-                <td>Address:{props.stu.address.city+" "+props.stu.address.country}</td>
+                <td>Address:{props.student.address.city+" "+props.student.address.country}</td>
             </tr>
             <tr>
-                <td>Skills:{props.stu.skills.map(skill=>skill+=",")}</td>
+                <td>Skills:{props.student.skills.map(skill=>skill+=",")}</td>
             </tr>
         </table>
         </>
